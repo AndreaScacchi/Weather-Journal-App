@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
-    height:100vh;
+    height:150vh;
     background: #0f4c5c;
     color: black;
     justify-content: center;
@@ -19,6 +19,7 @@ body{
 .title {
     font-size: 30px;
     display: block;
+
 }
 
 .entry{
@@ -34,32 +35,32 @@ label{
 
 input{
     display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    height: 50px;
+    width: 300px;
+    background: #540b0e;
+    color: #58f03a;
+    font-size: 22px;
+    font-family: 'Courgette', cursive;
     border: none;
 }
 
 button{
     width: 400px;
     height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
+    background: #c48808;
+    color: #3af0e7;
+    font-size: 22px;
+    font-family: 'Courgette', cursive;
     border: none;
     box-shadow: 2px 4px 5px #444;
 }
 
 
 textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    background:#2522da;
+    color: #d23af0;
+    font-size: 22px;
+    font-family: 'Courgette', cursive;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -70,19 +71,19 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+    color: #ceda22; 
+    font-family: 'Courgette', cursive;
 
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
     color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Courgette', cursive;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
     color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Courgette', cursive;
 
 } 
