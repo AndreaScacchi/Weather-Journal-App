@@ -1,6 +1,6 @@
 // Global variables
-const baseURL = 'http://api.openweathermap.org/data/2.5/?weather=';
-const apiKey = '470a765db3a57bf10f903479bd62d114';
+const baseURL = 'http://api.openweathermap.org/data/2.5/?zip=';
+const apiKey = '&appid=470a765db3a57bf10f903479bd62d114';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -57,7 +57,7 @@ const postData = async ( url = '', data = {}) => {
 
 // Update UI demo
 const updateUI = async () => {
-    const request = await fetch('all')
+    const request = await fetch('/all')
     try {
         const allData = await request.json()
         console.log(allData);
