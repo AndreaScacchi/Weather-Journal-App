@@ -55,7 +55,7 @@ function addData(req, res) {
         feelings: req.body.feelings
     }
 
-    data.push(newData);
+    data.push(newEntry);
     res.send(data);
     console.log(data);
 };
