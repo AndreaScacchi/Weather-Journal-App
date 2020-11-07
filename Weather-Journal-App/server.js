@@ -33,29 +33,17 @@ app.get('/all', sendData);
 function sendData(request, response) {
     response.send(projectData)
 };
-
-const data = [];
-
-app.get('/all', getData);
-
-function getData(req, res) {
-    res.send(data)
-    console.log(data)
-};
+    
 
 // POST route
 app.post('/add', addData);
 
 function addData(req, res) {
-    console.log(req.body);
+    let data = req.body;
 
-    newEntry = {
-        temperature: req.body.temperature,
-        date: req.body.date,
-        feelings: req.body.feelings
-    }
+    projectData["temperature"] = data.temperature;
+    projectData["feelings"] = data.feelings;
+    projectData["date"] = data.date;
 
-    data.push(newEntry);
-    res.send(data);
-    console.log(data);
+    res.send(projectData);
 };
