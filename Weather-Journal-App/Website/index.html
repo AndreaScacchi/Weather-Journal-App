@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Weather Journal</title>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
- <body>
-<div id = "app">
-  <div class ="holder headline">
-    Weather Journal App
-  </div>
-  <div class ="holder zip">
-    <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="Enter zip code here">
-  </div>
-  <div class ="holder feel">
-    <label for="feelings">How are you feeling today?</label>
-    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
-    <button id="generate" type = "submit"> Generate </button>
-  </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
-  </div>
-  </div>
-  </div>
-<script src="app.js" type="text/javascript"></script>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Journal</title>
+  <script src="https://kit.fontawesome.com/a83dba7890.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper__app">
+    <div id="app">
+      <div class="holder headline">
+        <h1 class="headline__heading ml12">Weather Journal App</h1>
+      </div>
+      <form class="app__form" autocomplete="off">
+        <div class="holder zip">
+          <input type="text" id="zip" maxlength="20" required=""  placeholder="Enter city name">
+          <label for="zip" class="zip__label"></label>
+        </div>
+        <button id="generate" type="submit"> Generate </button>
+      </form>
+      <div class="holder entry">
+        <h2 class="entry__title">Most Recent Entry</h2>
+        <div id="entryHolder">
+          <div class="entry__date">
+            <i class="fas fa-calendar-day entry__icon"></i>
+            <!-- content in this div is updated dynamically-->
+            <div id="date"></div>
+          </div>
+          <div class="entry__temp">
+            <i class="fas fa-thermometer-half entry__icon"></i>
+            <!-- content in this div is updated dynamically-->
+            <div id="temp"></div>
+          </div>
+          <div class="entry__city">
+            <i class="fas fa-city entry__icon"></i>
+            <!-- content in this div is updated dynamically-->
+            <div id="city"></div>
+          </div>
+          <div class="entry__weather">
+            <i class="fas fa-cloud-sun entry__icon"></i>
+            <!-- content in this div is updated dynamically-->
+            <div id="weather"></div>
+          </div>
+          <div class="entry__country">
+            <i class="fas fa-flag entry__icon"></i>
+            <!-- content in this div is updated dynamically-->
+            <div id="country"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
